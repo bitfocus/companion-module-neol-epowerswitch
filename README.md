@@ -2,5 +2,4 @@
 
 http based remote control Neol Epowerswitch4 with regex-based polling feedback.
 
-See [HELP.md](./companion/HELP.md) and [LICENSE](./LICENSE)
-follow Setup Guide [setup.md](./companion/setup.md)
+See [HELP.md](./companion/HELP.md) for setup and [LICENSE](./LICENSE)
