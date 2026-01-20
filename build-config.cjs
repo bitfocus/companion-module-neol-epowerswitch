@@ -1,3 +1,8 @@
-module.exports = {
-  prebuilds: ["@julusian/image-rs"],
-};
+export default {
+  copy: [
+    'README.md',
+    'LICENSE',
+    'companion/manifest.json',
+    'companion/HELP.md'
+  ]
+}
