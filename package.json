@@ -6,7 +6,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/brimbolex/companion-module-neol-epowerswitch4.git"
+    "url": "https://github.com/companion/companion-module-neol-epowerswitch4.git"
   },
   "bugs": {
   "url": "https://github.com/companion/companion-module-neol-epowerswitch4/issues"
