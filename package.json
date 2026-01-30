@@ -6,10 +6,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bitfocus/companion-module-neol-epowerswitch4.git"
+    "url": "https://github.com/bitfocus/companion-module-neol-epowerswitch.git"
   },
   "bugs": {
-  "url": "https://github.com/bitfocus/companion-module-neol-epowerswitch4/issues"
+  "url": "https://github.com/bitfocus/companion-module-neol-epowerswitch/issues"
   },
   "dependencies": {
     "@companion-module/base": "~1.11.3",
