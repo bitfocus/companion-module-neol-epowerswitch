@@ -14,7 +14,7 @@ The hidden page has to be activated in the admin tables
 navigate to Settings/Accounts
 
 
-<img src="/documents/epower accounts.png" alt="Accounts" width="300"/>
+<img src="./documents/epower_accounts.png" alt="Accounts" width="300"/>
 
 
 check the activation box  Hidden Page
@@ -23,7 +23,7 @@ check the activation box  Hidden Page
 and edit user hidden 
 
 
-<img src="/documents/epower hiddenuser.png" alt="Accounts" width="300"/>
+<img src="./documents/epower_hiddenuser.png" alt="Accounts" width="300"/>
 
 
 DON'T set a username or password.
@@ -42,4 +42,6 @@ create a button choose the outlet and the switching option (force ON, force OFF,
 create a feeback select the outlet and the button becomes green when switched ON
 
 it also fills a variable $(ePower4:outlet_x) while x is the number of the outlet for each output with the state On or Off
+
+////  For additional Information about the powerswitch, you can find the manuals in the documents folder  ////
 
