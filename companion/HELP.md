@@ -48,7 +48,7 @@ Enable **Hidden Page** and edit the **hidden** user.
 
 ### Variables
 
-The module provides variables for each outlet:
+The module provides variables for each outlet:  
 -'$(ePower4:outlet_1)'  
 -'$(ePower4:outlet_2)'  
 -'$(ePower4:outlet_3)'  
