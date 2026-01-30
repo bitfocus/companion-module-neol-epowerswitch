@@ -1,47 +1,61 @@
+## Neol ePowerSwitch 4 – HTTP Module
 
-## 	Neol EPowerSwitch4 HTTP Module
-remote control Neol Epowerswitch4 with regex-based polling feedback.
+Remote control of the NeoL ePowerSwitch 4 using HTTP and regex-based polling feedback.
 
-## SetUp your Neol EPowerSwitch with companion
+---
 
-this module uses the hidden page feature.
+## Setup your NeoL ePowerSwitch
 
-SETUP Neol Epowerswitch
+This module uses the **Hidden Page** feature of the ePowerSwitch.
 
-The hidden page has to be activated in the admin tables
+### Enable the Hidden Page
 
-[YOURIP:port/admin/control.htm] (port is usually 2550)
-navigate to Settings/Accounts
+Open the admin interface:
 
+`http://YOUR_IP:2550/admin/control.htm`  
+(port is usually **2550**)
 
-<img src="./documents/epower_accounts.png" alt="Accounts" width="300"/>
+Navigate to **Settings → Accounts**.
 
+![Accounts configuration](https://raw.githubusercontent.com/bitfocus/companion-module-neol-epowerswitch/main/companion/documents/epower_accounts.png)
 
-check the activation box  Hidden Page
+Enable **Hidden Page** and edit the **hidden** user.
 
+![Hidden user configuration](https://raw.githubusercontent.com/bitfocus/companion-module-neol-epowerswitch/main/companion/documents/epower_hiddenuser.png)
 
-and edit user hidden 
+⚠️ **Important**
+- Do **NOT** set a username or password
+- There is **no authentication** implemented in this module
+- Select the outlets that should be controllable
+- Use the red right-facing arrow to activate them  
+  (The “reset only” text is just an option description)
 
+---
 
-<img src="./documents/epower_hiddenuser.png" alt="Accounts" width="300"/>
+## Setup Companion
 
+1. Enter the destination **IP address** in the module configuration
+2. Choose a **polling interval** (recommended: `1000–2000 ms`)
+3. Create a button:
+   - Select the outlet
+   - Choose the switching mode:
+     - **Force ON**
+     - **Force OFF**
+     - **Toggle**
+4. Add a feedback:
+   - Select the outlet
+   - The button turns **green** when the outlet is ON
 
-DON'T set a username or password.
-there is no Auth routine in the plugin.
-Setup the Outlets witch should be controlable. 
-Select them in the box below and hit the red rightgfaced arrow icon
-(dont wonder about the reset only explanation. it is just an option!)
+### Variables
 
+The module provides variables for each outlet:
+$(ePower4:outlet_1)
+$(ePower4:outlet_2)
+$(ePower4:outlet_3)
+$(ePower4:outlet_4)
 
-SETUP companion
+Each variable contains `On` or `Off`.
 
-enter the destination IP in the conection 
-choose a polling interval (eg. 1000-2000 ms)
+---
 
-create a button choose the outlet and the switching option (force ON, force OFF, toggle)
-create a feeback select the outlet and the button becomes green when switched ON
-
-it also fills a variable $(ePower4:outlet_x) while x is the number of the outlet for each output with the state On or Off
-
-////  For additional Information about the powerswitch, you can find the manuals in the documents folder  ////
-
+For additional information about the ePowerSwitch, please refer to the manuals provided in the documents folder.
