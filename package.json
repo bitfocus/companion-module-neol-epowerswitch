@@ -1,6 +1,6 @@
 {
   "name": "companion-module-neol-epowerswitch",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "main": "index.js",
   "type": "module",
   "license": "MIT",
