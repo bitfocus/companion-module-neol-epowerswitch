@@ -1,4 +1,4 @@
-export default = {
+module.exports = {
   build: {
     shell: '/bin/bash',
   },
