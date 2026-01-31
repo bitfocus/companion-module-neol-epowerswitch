@@ -16,7 +16,7 @@
     "got": "^14.4.7"
   },
   "devDependencies": {
-    "@companion-module/tools": "2.5.1"
+    "@companion-module/tools": "2.5.0"
   },
   "packageManager": "yarn@4.12.0"
 }
