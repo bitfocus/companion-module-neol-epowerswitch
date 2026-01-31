@@ -23,7 +23,6 @@
 	},
   "products": ["ePowerSwitch 4"],
   "manufacturer": "NeoL",
-  "companionMinVersion": "4.2.0",
   "keywords": [
     "power",
     "pdu",
