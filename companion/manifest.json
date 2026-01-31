@@ -3,7 +3,7 @@
   "name": "NeoL ePowerSwitch 4",
   "shortname": "ePower4",
   "description": "HTTP control for NeoL ePowerSwitch 4 R3",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "license": "MIT",
 	"repository": "https://github.com/bitfocus/companion-module-neol-epowerswitch",
   "bugs": "https://github.com/bitfocus/companion-module-neol-epowerswitch/issues",
