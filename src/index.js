@@ -66,4 +66,4 @@ class EPowerSwitchInstance extends InstanceBase {
 	}
 }
 
-runEntrypoint(EPowerSwitchInstance, upgradeScripts)
+export default EPowerSwitchInstance
