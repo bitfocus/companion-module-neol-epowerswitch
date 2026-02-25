@@ -4,19 +4,33 @@
   "main": "index.js",
   "type": "module",
   "license": "MIT",
+
   "repository": {
     "type": "git",
     "url": "https://github.com/bitfocus/companion-module-neol-epowerswitch.git"
   },
   "bugs": {
-  "url": "https://github.com/bitfocus/companion-module-neol-epowerswitch/issues"
+    "url": "https://github.com/bitfocus/companion-module-neol-epowerswitch/issues"
   },
+
+  "engines": {
+    "node": ">=18 <21"
+  },
+
+  "scripts": {
+    "build": "companion-module-build",
+    "lint": "companion-module-lint"
+  },
+
   "dependencies": {
     "@companion-module/base": "~1.11.3",
     "got": "^14.4.7"
   },
+
   "devDependencies": {
-    "@companion-module/tools": "2.5.0"
+    "@companion-module/tools": "2.5.0",
+    "prettier": "^3.2.5"
   },
+
   "packageManager": "yarn@4.12.0"
 }
