@@ -1,6 +1,6 @@
 import { InstanceBase, runEntrypoint, InstanceStatus } from '@companion-module/base'
-import { configFields } from './config.js'
-import { upgradeScripts } from './upgrade.js'
+import { configFields } from '../config.js'
+import { upgradeScripts } from '../upgrade.js'
 
 import { initActions } from './actions.js'
 import { initFeedbacks } from './feedbacks.js'
