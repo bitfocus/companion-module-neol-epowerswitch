@@ -2,8 +2,8 @@
 export function initActions(self) {
 	self.setActionDefinitions({
 		toggle_outlet_hidden: {
-			name: 'ePowerSwitch: Toggle outlet (via hidden.htm)',
-			description: 'Sends hidden.htm M0:On=ON/OFF. Toggle uses current polled state.',
+			name: 'ePowerSwitch: Control outlet (via hidden.htm)',
+			description: 'Sends hidden.htm command M0:O{n}=ON/OFF. Toggle uses current polled state.',
 			options: [
 				{
 					type: 'dropdown',

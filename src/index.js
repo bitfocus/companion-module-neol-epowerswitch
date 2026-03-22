@@ -1,5 +1,6 @@
-import { InstanceBase, runEntrypoint, InstanceStatus } from '@companion-module/base'
-import { configFields } from '../config.js'
+import { InstanceBase, InstanceStatus, runEntrypoint } from '@companion-module/base'
+import { configFields } from './config.js'
+
 import { upgradeScripts } from '../upgrade.js'
 
 import { initActions } from './actions.js'
@@ -11,7 +12,7 @@ import { startPolling, stopPolling, pollStatus, sendOutletCommand } from './poll
 
 class EPowerSwitchInstance extends InstanceBase {
 	pollTimer = null
-	outletStates = { 1: false, 2: false, 3: false, 4: false }
+	outletStates = {}
 
 	configUpdated(config) {
 		this.config = {
@@ -22,6 +23,10 @@ class EPowerSwitchInstance extends InstanceBase {
 		}
 
 		this.updateStatus(InstanceStatus.Ok)
+		initActions(this)
+		initFeedbacks(this)
+		initVariables(this)
+		initPresets(this)
 
 		// Restart polling with updated config
 		startPolling(this)
@@ -67,3 +72,5 @@ class EPowerSwitchInstance extends InstanceBase {
 }
 
 export default EPowerSwitchInstance
+
+runEntrypoint(EPowerSwitchInstance, upgradeScripts)
