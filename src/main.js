@@ -15,6 +15,7 @@ class EPowerSwitchInstance extends InstanceBase {
 	outletStates = {}
 
 	configUpdated(config) {
+		stopPolling(this)
 		this.config = {
 			prefix: '',
 			hiddenPath: '/hidden.htm',

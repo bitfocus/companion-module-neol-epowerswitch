@@ -4,3 +4,8 @@ package-lock.json
 /*.tgz
 DEBUG-*
 .yarn/
+dist/
+*.log
+.DS_Store
+.vscode/
+.idea/

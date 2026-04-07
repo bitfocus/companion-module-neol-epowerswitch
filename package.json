@@ -1,29 +1,31 @@
 {
   "name": "companion-module-neol-epowerswitch",
-  "version": "1.1.1",
-  "main": "index.js",
+  "version": "1.1.2",
+  "main": "src/main.js",
   "type": "module",
   "license": "MIT",
 
   "repository": {
     "type": "git",
-    "url": "https://github.com/bitfocus/companion-module-neol-epowerswitch.git"
+    "url": "git+https://github.com/bitfocus/companion-module-neol-epowerswitch.git"
   },
   "bugs": {
     "url": "https://github.com/bitfocus/companion-module-neol-epowerswitch/issues"
   },
 
   "engines": {
-    "node": ">=18 <21"
+    "node": "^22.x",
+    "yarn": "^4"
   },
 
   "scripts": {
-    "build": "companion-module-build",
-    "lint": "companion-module-lint"
+    "package": "companion-module-build",
+    "lint": "companion-module-lint",
+    "format": "prettier -w ."
   },
 
   "dependencies": {
-    "@companion-module/base": "~1.11.3",
+    "@companion-module/base": "~1.12.0",
     "got": "^14.4.7"
   },
 
@@ -31,6 +33,6 @@
     "@companion-module/tools": "2.5.0",
     "prettier": "^3.2.5"
   },
-  "prettier": "@companion-module/tools/prettier",
+  "prettier": "@companion-module/tools/.prettierrc.json",
   "packageManager": "yarn@4.12.0"
 }
